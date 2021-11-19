@@ -52,7 +52,7 @@ const createReviewTemplate = (review) => `
 `;
 const createRestaurantItemTemplate = (resto) => `
         <div class = 'card-restaurant'> 
-        <img class="lazyload img-resto" src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" alt="Foto ${resto.name}">
+        <img class="lazyload img-resto" data-src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" alt="Foto ${resto.name}">
         <div class="content">
         <h3><a id="resto-name" href="${`/#/detail/${resto.id}`}">${resto.name}</a></h3>
         <div class="rating">
